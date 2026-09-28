@@ -3,10 +3,6 @@ n1 = int(input())
 n2 = int(input())
 
 try:
-    if n2 == 0:
-        print("Error, no puede ser 0")
-    else:
-        print(n1/n2)
-
+    print(n1/n2)
 except ZeroDivisionError:
     print("No se puede dividir entre 0.")
