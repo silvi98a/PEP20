@@ -1,4 +1,4 @@
-import math
+from math import sin, cos, sqrt, pow, radians
 
 print("¿Qué operación quieres hacer?")
 print("1. Seno de un ángulo")
@@ -10,20 +10,20 @@ opcion = int(input("Elige una opción (1-4): "))
 
 if opcion == 1:
     angulo = float(input("Introduce el ángulo en grados: "))
-    resultado = math.sin(math.radians(angulo))
+    resultado = sin(radians(angulo))
     print(f"El seno de {angulo}º es {resultado}")
 elif opcion == 2:
     angulo = float(input("Introduce el ángulo en grados: "))
-    resultado = math.cos(math.radians(angulo))
+    resultado = cos(radians(angulo))
     print(f"El coseno de {angulo}º es {resultado}")
 elif opcion == 3:
     numero = float(input("Introduce un número: "))
-    resultado = math.sqrt(numero)
+    resultado = sqrt(numero)
     print(f"La raíz cuadrada de {numero} es {resultado}")
 elif opcion == 4:
     base = float(input("Introduce la base: "))
     exponente = float(input("Introduce el exponente: "))
-    resultado = math.pow(base, exponente)
+    resultado = pow(base, exponente)
     print(f"{base} elevado a {exponente} es {resultado}")
 else:
     print("Opción no válida")
