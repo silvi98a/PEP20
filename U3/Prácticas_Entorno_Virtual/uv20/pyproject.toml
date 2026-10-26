@@ -1,0 +1,19 @@
+[project]
+name = "uv20"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "silvia", email = "silvi98a@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "cowsay>=6.1",
+]
+
+[project.scripts]
+uv20 = "uv20:main"
+
+[build-system]
+requires = ["uv_build>=0.13.5,<0.14.0"]
+build-backend = "uv_build"
